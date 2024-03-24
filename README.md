@@ -114,6 +114,8 @@ Search for "CMeshMgr::FindOrCreateVertexBuffer (dynamic VB)" and go to the funct
 At the top of the function should be a function call taking two arguments, go inside this function.  
 This function should consist of a single call followed by a value return:  
 `function_call(0, a1, a2, v3);`  
+(Ghidra doesn't correctly annotate the security cookie checking function, just ignore the second function call.
+Removing it shouldn't impact the application, however it could lead to memory corruption bugs)
 After the function call and eax has been loaded, add in the following instructions:  
 ```  
 test   eax,eax  
