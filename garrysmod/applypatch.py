@@ -16,7 +16,13 @@ patches32 = {
 'bin/shaderapidx9.dll': [
     ['0f4cd68bf7', '909090'], # four hardware lights
     ['83c4108be55dc3cccccccccccccccccc55', '85c07502b0048be55dc3'], # zero sized buffer
-    ['558bec8b451053568b750833', '31c0c3'] # shader constants
+    ['558bec8b451053568b750833', '31c0c3'], # shader constants
+    ['c7461400000100c74610008000', 'c7461400000200c74610000001'], # INDEX_BUFFER_SIZE, CMeshMgr::CMeshMgr
+    ['b800800000c3', 'b8000001'], # INDEX_BUFFER_SIZE, CMeshMgr::GetMaxIndicesToRender
+],
+'bin/materialsystem.dll': [
+    ['b800800000c3', 'b8000001'], # INDEX_BUFFER_SIZE, CMatQueuedRenderContext::GetMaxIndicesToRender
+    ['c701ffff0000c700008000', 'c701ffff0000c700000001'], # INDEX_BUFFER_SIZE, CMatQueuedRenderContext::GetMaxToRender
 ],
 }
 
@@ -36,6 +42,7 @@ patches64 = {
     ['4833cce8??c503004881c448', '85c0750466b80400'], # zero sized buffer
     ['4883ec084c', '31c0c3'] # shader constants
 ],
+# TODO: INDEX_BUFFER_SIZE patches for 64 bit
 }
 
 # Colored log output
