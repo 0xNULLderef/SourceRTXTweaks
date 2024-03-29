@@ -19,7 +19,7 @@ patches32 = {
     ['558bec8b451053568b750833', '31c0c3'], # shader constants
     ['c7461400000100c74610008000', 'c7461400000200c74610000001'], # INDEX_BUFFER_SIZE, CMeshMgr::CMeshMgr
     ['b800800000c3', 'b8000001'], # INDEX_BUFFER_SIZE, CMeshMgr::GetMaxIndicesToRender
-    ['506800800000', '5068000001'], # INDEX_BUFFER_SIZE, CMeshMgr::Init
+    ['5068008000008bce', '5068000001'], # INDEX_BUFFER_SIZE, CMeshMgr::Init
 ],
 'bin/materialsystem.dll': [
     ['b800800000c3', 'b8000001'], # INDEX_BUFFER_SIZE, CMatQueuedRenderContext::GetMaxIndicesToRender
