@@ -41,8 +41,8 @@ patches64 = {
     [('753cf30f10', 0), 'eb'], # brush entity backfaces
     [('7e5244', 0), 'eb'], # world backfaces
     [('753c498b4204', 0), 'eb'], # world backfaces
-    [('ff90????????85c0742b', 0), 'b802000000'], # Mod_LoadLighting HDR
-    [('ff90????????85c00f84fa000000', 0), 'b802000000'], # Mod_LoadWorldlights HDR
+    [('ff90????????85c0742b', 0), 'b80200000090'], # Mod_LoadLighting HDR
+    [('ff90????????85c00f84fa000000', 0), 'b80200000090'], # Mod_LoadWorldlights HDR
 ],
 'bin/win64/shaderapidx9.dll': [
     [('480f4ec1c7', 0), '90909090'], # four hardware lights
