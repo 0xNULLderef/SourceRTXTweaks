@@ -39,10 +39,11 @@ patches64 = {
 'bin/win64/engine.dll': [
     [('4883ec480f10', 0), '31c0c3'], # c_frustumcull, uses sse instructions in 64bit
     [('753cf30f10', 0), 'eb'], # brush entity backfaces
-    [('7e5244', 0), 'eb'], # world backfaces
+    [('7e5244', 0), 'eb'], # world backfaces (somewhat broken, check sort list size?)
     [('753c498b4204', 0), 'eb'], # world backfaces
     [('ff90????????85c0742b', 0), 'b80200000090'], # Mod_LoadLighting HDR
     [('ff90????????85c00f84fa000000', 0), 'b80200000090'], # Mod_LoadWorldlights HDR
+    [('4883ec48803d??????????48', 0), '31c0c3'], # R_CullNode
 ],
 'bin/win64/shaderapidx9.dll': [
     [('480f4ec1c7', 0), '90909090'], # four hardware lights
